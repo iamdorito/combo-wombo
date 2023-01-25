@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  padding: 20px;
+  color: white;
+}
+
+.App-logo {
+  height: 10rem;
+  pointer-events: none;
+  position: relative;
+  display:flex;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.combo-display-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: aliceblue;
+  font-size: 3rem;
+  background-color: rgb(223, 93, 93);
+}
+
+.form-container {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(250, 181, 188, 0.5);
+}
+.form-container form {
+  display: flex;
+  justify-content: center;
+}
+.form-container input {
+  margin-right: 2rem;
+  flex: 1;
+}
+.form-container button {
+  width: 150px;
+}
+
+
+.combination {
+  margin: 1rem;
+}
+
+.combination button {
+  margin-top: 0.5rem;
+}
+.child {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: aliceblue;
+  font-size: 2rem;
+  text-align:justify;
+}
+
+.form {
+  margin: 5rem auto 0;
+  width: 24rem;
+}
+.form button {
+  height: 2.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: red;
+  cursor: pointer;
+}
