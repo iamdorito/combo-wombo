@@ -1,0 +1,71 @@
+{
+    "transitions": [
+      {
+        "id": 1,
+        "name": "stepForward",
+        "description": "update description"
+      },
+      {
+        "id": 2,
+        "name": "stepRight",
+        "description": "update description"
+      },
+      {
+        "id": 3,
+        "name": "stepBack",
+        "description": "update description"
+      },
+      {
+        "id": 4,
+        "name": "stepLeft",
+        "description": "update description"
+      }
+    ],
+    "leadPunches": [
+      {
+        "id": 1,
+        "name": "jab",
+        "image": "update-image",
+        "description": "update description"
+      }
+    ],
+    "rearPunches": [
+      {
+        "id": 1,
+        "name": "cross",
+        "image": "update-image",
+        "description": "update description"
+      }
+    ],    
+    "elbows": [
+      {
+        "id": 1,
+        "name": "cross",
+        "image": "update-image",
+        "description": "update description"
+      }
+    ],  
+    "knees": [
+      {
+        "id": 1,
+        "name": "cross",
+        "image": "update-image",
+        "description": "update description"
+      }
+    ],    
+    "kicks": [
+      {
+        "id": 1,
+        "name": "cross",
+        "image": "update-image",
+        "description": "update description"
+      }
+    ],  
+    "combos": [
+      {
+        "id": 1,
+        "name": "sideSideJab",
+        "description": "update description"
+      }
+    ]
+  }

@@ -1,0 +1,64 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "name": "stepForward"
+    },
+    {
+      "id": 2,
+      "name": "stepRight"
+    }
+  ],
+  "combos": [
+    {
+      "id": 1,
+      "name": "1-1-1",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "jab",
+      "transition3": "stepLeft",
+      "strike3": "jab"
+    },
+    {
+      "id": 2,
+      "name": "1-2-3",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "cross",
+      "transition3": "stepLeft",
+      "strike3": "hook"
+    },
+    {
+      "id": 3,
+      "name": "1-2-1",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "cross",
+      "transition3": "stepLeft",
+      "strike3": "jab"
+    },
+    {
+      "id": 4,
+      "name": "1-2-2",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "cross",
+      "transition3": "stepLeft",
+      "strike3": "cross"
+    },
+    {
+      "name": "SEB",
+      "transition1": "stepLeft",
+      "strike1": "cross",
+      "transition2": "stepForward",
+      "strike2": "cross",
+      "transition3": "stepBack",
+      "strike3": "uppercut",
+      "id": 7
+    }
+  ]
+}
