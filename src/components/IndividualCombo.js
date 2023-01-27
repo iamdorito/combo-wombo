@@ -1,7 +1,10 @@
 // transition > strike > transition > strike > transition > strikeimport React from "react";
 import React, { useState } from "react";
 
-function Combination({ combination }) {
+function Combination({ 
+  combination,
+  setCurrentCombo  
+  }) {
     // create deconstructed object
     const { name, transition1, strike1, transition2, strike2, transition3, strike3 } = combination;
 
@@ -17,15 +20,23 @@ function Combination({ combination }) {
 }
 
     return (
-          <tr className="combination">
-            <td>{name}</td>
+          <tr className="individual-combination">
+            <td       
+              onClick={(e) => {
+              setCurrentCombo(combination);
+              }}
+              >
+              {name}</td>
             <td>{transition1}</td>
             <td>{strike1}</td>
             <td>{transition2}</td>
             <td>{strike2}</td>
             <td>{transition3}</td>
             <td>{strike3}</td>
-            <button onClick={handleDelete}>delete</button>
+            <td 
+              className="delete-button" 
+              onClick={handleDelete}>
+                delete</td>
         </tr>
     );
   }

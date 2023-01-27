@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import LandingPage from "./LandingPage.js"
-import ComboDisplay from "./ComboDisplay.js";
-import ComboList from "./ComboList.js"
-import AddComboForm from "./AddComboForm.js"
+import LandingPage from "../LandingPage.js"
+import ComboList from "../ComboList.js"
+import AddComboForm from "../AddComboForm.js"
 
 function MainPage() {
   const [ combos, setCombos ] = useState([]);
@@ -23,10 +22,9 @@ function MainPage() {
   return (
     <div className="MainPage">
       <body>
-        
+      
         <LandingPage />
         {/* <Combination /> */}
-        <ComboDisplay combos={combos} />
         <ComboList combos={combos} />
         <AddComboForm onAddCombo={onAddCombo} />
       </body>

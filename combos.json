@@ -2,11 +2,55 @@
   "transitions": [
     {
       "id": 1,
-      "name": "stepForward"
+      "name": "stepForward",
+      "description": "update description"
     },
     {
       "id": 2,
-      "name": "stepRight"
+      "name": "stepRight",
+      "description": "update description"
+    },
+    {
+      "id": 3,
+      "name": "stepBack",
+      "description": "update description"
+    },
+    {
+      "id": 4,
+      "name": "stepLeft",
+      "description": "update description"
+    }
+  ],
+  "punches": [
+    {
+      "id": 1,
+      "name": "jab",
+      "description": "update description"
+    },
+    {
+      "id": 2,
+      "name": "cross",
+      "description": "update description"
+    },
+    {
+      "id": 3,
+      "name": "lead hook",
+      "description": "update description"
+    },
+    {
+      "id": 4,
+      "name": "rear hook",
+      "description": "update description"
+    },
+    {
+      "id": 5,
+      "name": "lead uppercut",
+      "description": "update description"
+    },
+    {
+      "id": 6,
+      "name": "rear uppercut",
+      "description": "update description"
     }
   ],
   "combos": [
@@ -31,34 +75,14 @@
       "strike3": "hook"
     },
     {
-      "id": 3,
-      "name": "1-2-1",
-      "transition1": "stepLeft",
+      "name": "Seb",
+      "transition1": "stepForward",
       "strike1": "jab",
-      "transition2": "stepLeft",
-      "strike2": "cross",
-      "transition3": "stepLeft",
-      "strike3": "jab"
-    },
-    {
-      "id": 4,
-      "name": "1-2-2",
-      "transition1": "stepLeft",
-      "strike1": "jab",
-      "transition2": "stepLeft",
-      "strike2": "cross",
-      "transition3": "stepLeft",
-      "strike3": "cross"
-    },
-    {
-      "name": "SEB",
-      "transition1": "stepLeft",
-      "strike1": "cross",
       "transition2": "stepForward",
-      "strike2": "cross",
-      "transition3": "stepBack",
-      "strike3": "uppercut",
-      "id": 7
+      "strike2": "jab",
+      "transition3": "stepForward",
+      "strike3": "jab",
+      "id": 3
     }
   ]
 }

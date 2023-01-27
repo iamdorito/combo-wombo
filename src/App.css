@@ -25,8 +25,9 @@
   color: #61dafb;
 }
 
-.combo-display-container {
+.selected-combo-container {
   display: flex;
+  gap: 2rem;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
@@ -34,12 +35,27 @@
 }
 
 .child {
-  height: 10rem;
-  width: 10rem;
-  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  width: 20rem;
+  /* border: 2px solid rgb(255, 255, 255); */
   color: aliceblue;
   font-size: 3rem;
   background-color: rgb(223, 93, 93);
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px;
+  box-shadow: 10px 10px 25px lightslategray;
+}
+.child:hover {
+  transform: scale(1.1);
+  border: 8px solid rgb(227, 65, 50);
+}
+
+.selected-child-header {
+  font-size: 4rem;
 }
 
 .form-container {
@@ -59,21 +75,12 @@
   width: 150px;
 }
 
-
 .combination {
   margin: 1rem;
 }
 
 .combination button {
   margin-top: 0.5rem;
-}
-.child {
-  height: 10rem;
-  width: 10rem;
-  border: 2px solid rgb(255, 255, 255);
-  color: aliceblue;
-  font-size: 2rem;
-  text-align:justify;
 }
 
 .form {
@@ -86,4 +93,37 @@
   color: #fff;
   background: red;
   cursor: pointer;
+}
+
+.combo-list {
+display: flex;
+flex-direction: column;
+width: 100vw;
+align-items: center;
+}
+
+.combo-list-table {
+  table-layout: fixed;
+}
+
+th {
+  height: 60px;
+  width: 9rem;
+  font-size: 1.6rem;
+  border-bottom: 7px solid rgb(255, 114, 114);
+}
+td {
+  height: 5rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgb(255, 114, 114);
+}
+
+.ui-button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgb(227, 65, 50);
+}
+
+.delete-button:hover {
+  color: red
 }
