@@ -11,8 +11,8 @@ function LandingPage() {
 		
 		{/* <!--Left Col--> */}
 		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-			<h1 class="my-4 text-3xl md:text-8xl text-red-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">Combo Generator</h1>
-			<p class="leading-normal text-base md:text-2xl mb-8 text-center font-bold md:text-left slide-in-bottom-subtitle">Create your own combos for fun and/or drilling!</p>
+			<h1 class="my-4 text-3xl md:text-8xl text-red-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">Combo Wombo Generator</h1>
+			<p class="leading-normal text-base md:text-2xl mb-8 text-center font-bold md:text-left slide-in-bottom-subtitle">Create your own combos to make the most of your drills!</p>
 		
 			<p class="text-red-400 text-2xl font-bold pb-8 lg:pb-6 text-center md:text-left fade-in">Get started!</p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">

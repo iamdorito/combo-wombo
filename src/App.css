@@ -49,6 +49,7 @@
   border-radius: 30px;
   box-shadow: 10px 10px 25px lightslategray;
 }
+
 .child:hover {
   transform: scale(1.1);
   border: 8px solid rgb(227, 65, 50);
@@ -63,16 +64,25 @@
   margin: 2rem 0;
   background-color: rgba(250, 181, 188, 0.5);
 }
+
 .form-container form {
   display: flex;
   justify-content: center;
 }
+
 .form-container input {
   margin-right: 2rem;
   flex: 1;
 }
+
 .form-container button {
   width: 150px;
+}
+
+.form-container button:hover {
+  transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgb(227, 65, 50);
 }
 
 .combination {
@@ -87,6 +97,7 @@
   margin: 5rem auto 0;
   width: 24rem;
 }
+
 .form button {
   height: 2.5rem;
   font-size: 1rem;
@@ -96,10 +107,10 @@
 }
 
 .combo-list {
-display: flex;
-flex-direction: column;
-width: 100vw;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
 }
 
 .combo-list-table {
@@ -112,18 +123,36 @@ th {
   font-size: 1.6rem;
   border-bottom: 7px solid rgb(255, 114, 114);
 }
+
 td {
   height: 5rem;
   font-size: 1.3rem;
   border-bottom: 2px solid rgb(255, 114, 114);
 }
 
-.ui-button:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-  border: 1px solid rgb(227, 65, 50);
+.combo-display-button{
+  cursor: pointer;
+}
+
+.combo-display-button:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.delete-button {
+  cursor: pointer;
 }
 
 .delete-button:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.emoji-button.favorite.active {
+  cursor: pointer;
+}
+
+.emoji-button.favorite:hover {
+  transform: scale(1.1);
   color: red
 }

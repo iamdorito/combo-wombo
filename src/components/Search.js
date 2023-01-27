@@ -1,14 +1,16 @@
 import React from "react";
 
-function Search() {
+function Search({searchFilter}) {
   return (
-    <div className="ui large fluid icon input">
+    <form className="searchbar" class="relative text-gray-600 focus-within:text-gray-400" >
       <input
         type="text"
-        placeholder="Search by combo name"
+        id="search"
+        placeholder="Search by name"
+        onChange={searchFilter}
       />
-      <i className="circular search link icon"></i>
-    </div>
+      <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">🔍</button>
+    </form>
   );
 }
 

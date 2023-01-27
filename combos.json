@@ -1,5 +1,5 @@
 {
-  "transitions": [
+  "transitionSteps": [
     {
       "id": 1,
       "name": "stepForward",
@@ -55,26 +55,6 @@
   ],
   "combos": [
     {
-      "id": 1,
-      "name": "1-1-1",
-      "transition1": "stepLeft",
-      "strike1": "jab",
-      "transition2": "stepLeft",
-      "strike2": "jab",
-      "transition3": "stepLeft",
-      "strike3": "jab"
-    },
-    {
-      "id": 2,
-      "name": "1-2-3",
-      "transition1": "stepLeft",
-      "strike1": "jab",
-      "transition2": "stepLeft",
-      "strike2": "cross",
-      "transition3": "stepLeft",
-      "strike3": "hook"
-    },
-    {
       "name": "Seb",
       "transition1": "stepForward",
       "strike1": "jab",
@@ -83,6 +63,36 @@
       "transition3": "stepForward",
       "strike3": "jab",
       "id": 3
+    },
+    {
+      "name": "1-1-2",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "jab",
+      "transition3": "stepBack",
+      "strike3": "cross",
+      "id": 4
+    },
+    {
+      "name": "1-2-3",
+      "transition1": "stepLeft",
+      "strike1": "jab",
+      "transition2": "stepLeft",
+      "strike2": "cross",
+      "transition3": "stepBack",
+      "strike3": "hook",
+      "id": 5
+    },
+    {
+      "name": "Ivan",
+      "transition1": "stepForward",
+      "strike1": "cross",
+      "transition2": "stepLeft",
+      "strike2": "hook",
+      "transition3": "stepLeft",
+      "strike3": "cross",
+      "id": 6
     }
   ]
 }

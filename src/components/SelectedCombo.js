@@ -1,9 +1,7 @@
 import React from "react";
 
 function SelectedCombo({ 
-  combos, 
   currentCombo,
-  setCurrentCombo
   })  {
 
     // fetch("http://localhost:3000/combos")

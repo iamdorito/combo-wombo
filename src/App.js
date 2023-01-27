@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Switch, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
-import './App.css';
-import ComboList from './components/ComboList';
+import CombosPage from './components/CombosPage';
 import AddComboForm from './components/AddComboForm';
 import LandingPage from './components/LandingPage';
-
+import './App.css';
 
 function App() {
   const [ combos, setCombos ] = useState([]);
   const [ currentCombo, setCurrentCombo ] = useState('');
+  const [ transitions, setTransitions ] = useState('');
+  const [ punches, setPunches ] = useState('');
   const combosURL = "http://localhost:3000/combos";
 
   useEffect(() => {
@@ -19,9 +20,26 @@ function App() {
       setCombos(comboData);
     };
     fetchData();
-  },[])
+    },[])
 
-  console.log(combos)
+  useEffect(() => {
+    const fetchData = async () => {
+      let res = await fetch("http://localhost:3000/transitionSteps");
+      let transitionData = await res.json();
+      setTransitions(transitionData);
+    };
+    fetchData();
+    },[])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      let res = await fetch("http://localhost:3000/punches");
+      let punchData = await res.json();
+      setPunches(punchData);
+    };
+    fetchData();
+    },[])
+
   // function to add new combo through form
   const onAddCombo = (newCombo) => {
     setCombos((combos) => [...combos, newCombo])
@@ -33,14 +51,18 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/combos">
-          <ComboList 
-          combos={combos} 
-          currentCombo={currentCombo}
-          setCurrentCombo={setCurrentCombo}
-          />
+          <CombosPage 
+            combos={combos} 
+            currentCombo={currentCombo}
+            setCurrentCombo={setCurrentCombo}
+            />
         </Route>
         <Route path="/createCombos">
-          <AddComboForm onAddCombo={onAddCombo} />
+          <AddComboForm 
+            onAddCombo={onAddCombo}
+            transitions={transitions}
+            punches={punches}
+            />
         </Route>
         <Route exact path="/">
           <LandingPage />
