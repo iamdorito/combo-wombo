@@ -1,3 +1,8 @@
+# Combo Wombo
+A tool designed to help you make the most of your drills and keep track of some of your favorite boxing combinations!
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
