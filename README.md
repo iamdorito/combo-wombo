@@ -8,5 +8,5 @@ Features
 - User Authentication
 - Listing of Combos Page
 - Save a Combo
-- Like 
+- Like other users Combos
 - User Profile
